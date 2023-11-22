@@ -10,8 +10,8 @@ public class Zombie : MonoBehaviour
 	public int currentHealth;
 	public HealthBar ZhealthBar;
 
-    public Rigidbody Zrb;
-    public float speed = 50.0f;
+    //public Rigidbody Zrb;
+    public float speed = 5.0f;
     Vector3 movement;
     //Vector3 ImpulseVector = new Vector3(-50.0f,0.0f,0.0f);
 
@@ -19,16 +19,16 @@ public class Zombie : MonoBehaviour
     {
 		currentHealth = maxHealth;
 		ZhealthBar.SetMaxHealth(maxHealth);
-        Zrb = GetComponent<Rigidbody>();
+        //Zrb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
-    {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
+    // void FixedUpdate()
+    // {
+    //     movement.x = Input.GetAxis("Horizontal");
+    //     movement.y = Input.GetAxis("Vertical");
 
-        Zrb.MovePosition(Zrb.position + movement * speed * Time.fixedDeltaTime);
-    }
+    //     Zrb.MovePosition(Zrb.position + movement * speed * Time.fixedDeltaTime);
+    // }
 
 	void TakeDamage(int damage)
 	{
