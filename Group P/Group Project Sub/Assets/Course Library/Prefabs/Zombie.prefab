@@ -1198,7 +1198,8 @@ GameObject:
   - component: {fileID: 8452102029394037587}
   - component: {fileID: 3866435301272292979}
   - component: {fileID: 9046624880594810068}
-  - component: {fileID: 3457773523482265385}
+  - component: {fileID: 3549577185846053441}
+  - component: {fileID: 6107619034396773923}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Zombie
@@ -1298,12 +1299,12 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 124
   m_CollisionDetection: 0
---- !u!114 &3457773523482265385
+--- !u!114 &3549577185846053441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1312,12 +1313,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 5693649526922622380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3906fddfae35a5b4ca3cf70667e44120, type: 3}
+  m_Script: {fileID: 11500000, guid: 66739228ece68c64eaa8bc9bc8a9757e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+--- !u!114 &6107619034396773923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5693649526922622380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3c49c1d95555a4d836096c3031384c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
   currentHealth: 0
   ZhealthBar: {fileID: 0}
+  Zrb: {fileID: 0}
 --- !u!1 &5896201026709474326
 GameObject:
   m_ObjectHideFlags: 0
