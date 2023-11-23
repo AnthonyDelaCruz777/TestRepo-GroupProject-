@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public GameObject titleScreen;
     public UnityEngine.UI.Button button;
 
+    public int difficulty;
+
     public bool isGameActive;
     // Start is called before the first frame update
 

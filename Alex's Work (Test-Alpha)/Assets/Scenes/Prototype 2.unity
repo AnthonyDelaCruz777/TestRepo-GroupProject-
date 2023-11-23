@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657922, g: 0.49641347, b: 0.5748169, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465791, g: 0.4964137, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -330,7 +330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &87012617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1073,7 +1073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &287384187
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1206,7 +1206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &309382475
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1959,6 +1959,7 @@ MonoBehaviour:
   goldCount: {fileID: 0}
   titleScreen: {fileID: 0}
   button: {fileID: 0}
+  difficulty: 0
   isGameActive: 0
 --- !u!4 &526256672 stripped
 Transform:
@@ -3246,6 +3247,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefabs:
   - {fileID: 2686890238580948232, guid: 7856c197eb4c77840878eba92e1c48b7, type: 3}
+  scoreText: {fileID: 0}
+  gameOverText: {fileID: 0}
+  titleScreen: {fileID: 0}
+  restartButton: {fileID: 0}
+  targetPrefabs: []
 --- !u!4 &1081378078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e5be0682e29b3b24dac707e2e315754b, type: 3}
@@ -3453,7 +3459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1196539487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4520,7 +4526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1493135795
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5521,6 +5527,7 @@ MonoBehaviour:
   goldCount: {fileID: 1851809106}
   titleScreen: {fileID: 525358026}
   button: {fileID: 1493135796}
+  difficulty: 0
   isGameActive: 0
 --- !u!1 &1783780740
 GameObject:
